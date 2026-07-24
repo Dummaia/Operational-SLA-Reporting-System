@@ -185,8 +185,3 @@ Data Analytics | Business Intelligence | Process Automation
 GitHub
 
 https://github.com/maiae3381
-
-Data Analytics | Business Intelligence | Process Automation
-
-GitHub:
-https://github.com/maiae3381
