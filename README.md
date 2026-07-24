@@ -1,178 +1,138 @@
 # 🚀 Operational SLA Reporting System
 
-Python automation for monitoring operational activities and automatically delivering executive and individual SLA reports.
+An automation project developed in Python for monitoring operational activities, applying SLA business rules, and automatically generating executive and individual HTML reports delivered via Microsoft Outlook.
 
-This project was inspired by a real-world operational automation developed to improve daily decision-making.
-
-It consolidates operational data from multiple Excel worksheets, applies business rules, identifies critical situations, and automatically delivers customized SLA reports to management and operational users.
-
-The objective is to transform operational information into actionable insights, ensuring that the right people receive the right information at the right time.
+This project demonstrates how operational Excel data can be transformed into actionable management information through automated processing and report generation.
 
 ---
 
-# ✨ Features
+# 📌 Features
 
-- 📥 Read operational data from multiple Excel worksheets
-- 🔄 Consolidate operational information
-- 🧹 Clean and validate datasets
-- 📊 Apply business rules
-- 🚨 Detect overdue operational activities
-- ⚠️ Identify upcoming SLA risks
-- 📝 Detect outdated operational updates
-- 📈 Generate Executive SLA Reports
-- 👤 Generate Individual SLA Reports
-- 📧 Automatically deliver Outlook email reports
+- Read operational Excel datasets
+- Apply SLA business rules
+- Classify operational requests by priority
+- Calculate SLA deadlines automatically
+- Generate Executive SLA Reports
+- Generate Individual SLA Reports by buyer
+- Produce HTML formatted reports
+- Automatically send reports via Microsoft Outlook
+- Generate execution logs
 
 ---
 
-# 🏗 System Architecture
+# 🔄 Workflow
+
+![Workflow](images/workflow_overview.png)
+
+---
+
+# 📊 Executive Report Example
+
+The Executive Report provides a consolidated management view of the operational portfolio, highlighting SLA risks, critical buyers and operational indicators.
+
+![Executive Report](images/management-report-example.png)
+
+---
+
+# 👤 Individual Report Example
+
+Each buyer automatically receives a personalized report containing only their own operational portfolio, overdue requests, upcoming deadlines and follow-up status.
+
+![Individual Report](images/individual-sla-report-example.png)
+
+---
+
+# 📁 Project Structure
 
 ```text
-                  Operational Data
-                         │
-                         ▼
-              Business Rules Engine
-                         │
-        ┌────────────────┴────────────────┐
-        │                                 │
-        ▼                                 ▼
- Executive SLA Report          Individual SLA Reports
-        │                                 │
-        ▼                                 ▼
-    Management                 Responsible Users
-```
-
----
-
-# 📂 Repository Structure
-
-```text
-Operational-SLA-Reporting-System/
-
-│
-├── README.md
-├── LICENSE
-├── requirements.txt
-├── .gitignore
-│
-├── main_executive_report.py
-├── main_individual_report.py
+Operational-SLA-Reporting-System
 │
 ├── data/
 │   ├── sample_operations.xlsx
 │   └── sample_users.xlsx
 │
-└── images/
+├── images/
+│   ├── workflow_overview.png
+│   ├── management-report-example.png
+│   └── individual-sla-report-example.png
+│
+├── src/
+│   ├── executive_sla_report.py
+│   └── individual_sla_report.py
+│
+├── README.md
+├── requirements.txt
+├── LICENSE
+└── .gitignore
 ```
 
 ---
 
-# ⚙ Components
+# ⚙️ Technologies
 
-## 📊 Executive SLA Report
-
-Generates a consolidated management report including:
-
-- Executive operational KPIs
-- Open operational activities
-- Overdue activities
-- Immediate SLA risks
-- Upcoming SLA attention
-- Critical workflow stages
-- Outdated operational updates
-- Top responsible users
-- Automatic Outlook delivery
+- Python 3.x
+- Pandas
+- OpenPyXL
+- pywin32
+- Microsoft Outlook
+- HTML
 
 ---
 
-## 👤 Individual SLA Report
+# 📦 Installation
 
-Generates personalized SLA reports for each responsible user including:
+Clone the repository.
 
-- Assigned operational activities
-- Overdue items
-- Upcoming deadlines
-- Current workflow stage
-- Latest operational updates
-- Prioritized action list
-- Automatic Outlook delivery
+```bash
+git clone https://github.com/Dummaia/Operational-SLA-Reporting-System.git
+```
 
----
+Navigate to the project directory.
 
-# 🛠 Technologies
+```bash
+cd Operational-SLA-Reporting-System
+```
 
-- 🐍 Python
-- 📊 Pandas
-- 🔢 NumPy
-- 📄 OpenPyXL
-- 📧 PyWin32 (Outlook Automation)
-- 📂 Microsoft Excel
+Install the required libraries.
 
----
-
-# ⚙ Workflow
-
-```text
-Excel Worksheets
-        │
-        ▼
-Read Multiple Worksheets
-        │
-        ▼
-Data Cleaning & Validation
-        │
-        ▼
-Business Rules Engine
-        │
-        ├───────────────┐
-        │               │
-        ▼               ▼
-Executive Report   Individual Reports
-        │               │
-        ▼               ▼
-Management     Responsible Users
+```bash
+pip install -r requirements.txt
 ```
 
 ---
 
-# 🎯 Purpose
+# ▶️ Running the Project
 
-This project does not replace dashboards.
+Generate the executive report:
 
-Dashboards remain essential for monitoring operational performance and business indicators.
+```bash
+python src/executive_sla_report.py
+```
 
-The purpose of this solution is different.
+Generate the individual reports:
 
-It transforms existing operational information into proactive communication, helping management and operational teams identify priorities, reduce SLA risks and keep operational information up to date before issues become critical.
-
----
-
-# 🚀 Future Improvements
-
-- PostgreSQL integration
-- Historical SLA database
-- Power BI integration
-- Microsoft Teams notifications
-- Docker deployment
-- Azure Container Apps
-- REST API
-- Web dashboard
+```bash
+python src/individual_sla_report.py
+```
 
 ---
 
-# 📸 Screenshots
+# 📄 Sample Datasets
 
-The repository includes examples of:
+The repository contains sample datasets for demonstration purposes.
 
-- Executive SLA Report
-- Individual SLA Report
-- HTML email templates
+- sample_operations.xlsx
+- sample_users.xlsx
+
+No confidential business information is included.
 
 ---
 
-# 📄 License
+# 🔒 License
 
 This project is licensed under the MIT License.
+
+See the LICENSE file for details.
 
 ---
 
@@ -180,8 +140,7 @@ This project is licensed under the MIT License.
 
 **Eduardo Maia**
 
-Data Analytics | Business Intelligence | Process Automation
+Data Analyst | Python Automation | Business Intelligence | Process Automation
 
-GitHub
-
+GitHub:
 https://github.com/Dummaia
