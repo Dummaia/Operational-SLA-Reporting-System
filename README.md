@@ -2,13 +2,15 @@
 
 Python automation for monitoring operational activities and automatically delivering executive and individual SLA reports.
 
-This project was inspired by a real-world operational automation developed to improve daily decision-making. It consolidates operational data from multiple Excel worksheets, applies business rules, identifies critical situations and automatically delivers customized reports to managers and operational users.
+This project was inspired by a real-world operational automation developed to improve daily decision-making.
 
-The goal is to transform operational data into actionable information, ensuring that the right people receive the right information at the right time.
+It consolidates operational data from multiple Excel worksheets, applies business rules, identifies critical situations, and automatically delivers customized SLA reports to management and operational users.
+
+The objective is to transform operational information into actionable insights, ensuring that the right people receive the right information at the right time.
 
 ---
 
-# ✨ Key Features
+# ✨ Features
 
 - 📥 Read operational data from multiple Excel worksheets
 - 🔄 Consolidate operational information
@@ -23,9 +25,9 @@ The goal is to transform operational data into actionable information, ensuring 
 
 ---
 
-# 🏗 Architecture
+# 🏗 System Architecture
 
-```
+```text
                   Operational Data
                          │
                          ▼
@@ -45,7 +47,7 @@ The goal is to transform operational data into actionable information, ensuring 
 # 📂 Repository Structure
 
 ```text
-Operational-Intelligence-Suite/
+Operational-SLA-Reporting-System/
 
 │
 ├── README.md
@@ -69,7 +71,7 @@ Operational-Intelligence-Suite/
 
 ## 📊 Executive SLA Report
 
-Generates a consolidated management report containing:
+Generates a consolidated management report including:
 
 - Executive operational KPIs
 - Open operational activities
@@ -78,14 +80,14 @@ Generates a consolidated management report containing:
 - Upcoming SLA attention
 - Critical workflow stages
 - Outdated operational updates
-- Top critical responsible users
+- Top responsible users
 - Automatic Outlook delivery
 
 ---
 
 ## 👤 Individual SLA Report
 
-Generates personalized reports for each responsible user containing:
+Generates personalized SLA reports for each responsible user including:
 
 - Assigned operational activities
 - Overdue items
@@ -104,13 +106,13 @@ Generates personalized reports for each responsible user containing:
 - 🔢 NumPy
 - 📄 OpenPyXL
 - 📧 PyWin32 (Outlook Automation)
-- 📂 Excel
+- 📂 Microsoft Excel
 
 ---
 
 # ⚙ Workflow
 
-```
+```text
 Excel Worksheets
         │
         ▼
@@ -135,13 +137,13 @@ Management     Responsible Users
 
 # 🎯 Purpose
 
-This project was not created to replace dashboards.
+This project does not replace dashboards.
 
-Dashboards are essential for monitoring performance and analyzing operational indicators.
+Dashboards remain essential for monitoring operational performance and business indicators.
 
 The purpose of this solution is different.
 
-It transforms existing operational information into proactive communication, helping managers and operational teams identify priorities, mitigate SLA risks and keep operational information up to date before issues become critical.
+It transforms existing operational information into proactive communication, helping management and operational teams identify priorities, reduce SLA risks and keep operational information up to date before issues become critical.
 
 ---
 
@@ -154,8 +156,7 @@ It transforms existing operational information into proactive communication, hel
 - Docker deployment
 - Azure Container Apps
 - REST API
-- Web Dashboard
-- AI-assisted operational insights
+- Web dashboard
 
 ---
 
@@ -163,9 +164,9 @@ It transforms existing operational information into proactive communication, hel
 
 The repository includes examples of:
 
-- Executive SLA email
-- Individual SLA email
-- Operational reports
+- Executive SLA Report
+- Individual SLA Report
+- HTML email templates
 
 ---
 
@@ -178,6 +179,12 @@ This project is licensed under the MIT License.
 # 👨‍💻 Author
 
 **Eduardo Maia**
+
+Data Analytics | Business Intelligence | Process Automation
+
+GitHub
+
+https://github.com/maiae3381
 
 Data Analytics | Business Intelligence | Process Automation
 
