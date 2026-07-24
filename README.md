@@ -104,8 +104,7 @@ MIT License.
 
 **Eduardo Maia**
 
-LinkedIn:
-https://www.linkedin.com/in/eduardo-maia
+LinkedIn:[https://www.linkedin.com/in/eduardomaia1
 
 GitHub:
 https://github.com/Dummaia
