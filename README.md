@@ -6,16 +6,17 @@ This project automates the complete SLA reporting workflow, from Excel data proc
 
 ---
 
-## ✨ Features
+## 📌 Features
 
 - Read operational Excel datasets
 - Apply SLA business rules
-- Identify overdue and critical requests
-- Generate Executive SLA Report
-- Generate Individual SLA Reports
-- Automatically send HTML reports via Microsoft Outlook
-- Produce execution logs
-
+- Classify operational requests by priority
+- Calculate SLA deadlines automatically
+- Generate Executive SLA Reports
+- Generate Individual SLA Reports by buyer
+- Produce HTML-formatted reports
+- Automatically send reports via Microsoft Outlook
+- Generate execution logs
 ---
 
 ## 🔄 Workflow
